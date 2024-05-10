@@ -91,7 +91,7 @@
     #  thunderbird
     ];
   };
-
+  
   # Install firefox.
   programs.firefox.enable = true;
 
@@ -100,16 +100,39 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
+  fonts.packages = with pkgs; [
+   pkgs.nerdfonts
+  ];
+
   environment.systemPackages = with pkgs; [
+   #general
    pkgs.neovim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-   pkgs.git
-   pkgs.nodejs_21
+   pkgs.neovide
    pkgs.vscode
 
-   pkgs.kitty
-   pkgs.waybar
+   # packages for programming
+   pkgs.git
+   pkgs.nodejs_21
+   pkgs.gcc
+   pkgs.wget
+
+   #
+   pkgs.cava
+   pkgs.btop
+   pkgs.neofetch
+   pkgs.pulseaudio
+   pkgs.grim
+   pkgs.slurp
+   pkgs.wl-clipboard
    pkgs.dunst
    pkgs.libnotify
+
+   #neovim
+   pkgs.unzip
+
+   #hyprland based
+   pkgs.kitty
+   pkgs.waybar
    pkgs.hyprpaper
    pkgs.rofi-wayland
    pkgs.xdg-desktop-portal-hyprland
@@ -126,7 +149,7 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
+  services.openssh.enable = false;
   programs.hyprland = {
     enable = true;
     enableNvidiaPatches = true;
@@ -140,8 +163,15 @@
 
   hardware = {
     opengl.enable = true;
+    opengl.driSupport = true;
+    opengl.driSupport32Bit = true;
+
     nvidia.modesetting.enable = true;
+    nvidia.open = false;
+    nvidia.nvidiaSettings = true;
+    nvidia.package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
+  services.xserver.videoDrivers = ["nvidia"];
 
   xdg.portal.enable = true;
 
