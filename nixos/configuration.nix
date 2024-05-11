@@ -2,12 +2,13 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      inputs.home-manager.nixosModules.default
     ];
 
   # Bootloader.
@@ -18,6 +19,7 @@
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
@@ -51,9 +53,9 @@
   services.xserver.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
-  services.xserver = {
+  services.xserver.xkb = {
     layout = "tr";
-    xkbVariant = "";
+    variant = "";
   };
 
   # Configure console keymap
@@ -64,7 +66,7 @@
 
   # Enable sound with pipewire.
   sound.enable = true;
-  hardware.pulseaudio.enable = false;
+  hardware.pulseaudio.enable = false; 
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -92,67 +94,63 @@
     ];
   };
   
+   home-manager = {
+    extraSpecialArgs = { inherit inputs; };
+    users = {
+     "enes" = import ./home.nix;
+    };
+   };
+
   # Install firefox.
   programs.firefox.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
   fonts.packages = with pkgs; [
    pkgs.nerdfonts
   ];
 
   environment.systemPackages = with pkgs; [
    #general
-   pkgs.neovim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-   pkgs.neovide
-   pkgs.vscode
+   neovim 
+   neovide
 
    # packages for programming
-   pkgs.git
-   pkgs.nodejs_21
-   pkgs.gcc
-   pkgs.wget
+   git
+   nodejs_22
+   gcc
+   wget
 
    #
-   pkgs.cava
-   pkgs.btop
-   pkgs.neofetch
-   pkgs.pulseaudio
-   pkgs.grim
-   pkgs.slurp
-   pkgs.wl-clipboard
-   pkgs.dunst
-   pkgs.libnotify
+   ncdu
+   pywal
+   cava
+   btop
+   neofetch
+   grim
+   slurp
+   pavucontrol
+   wl-clipboard
+   dunst
+   libnotify
 
    #neovim
-   pkgs.unzip
+   unzip
 
    #hyprland based
-   pkgs.kitty
-   pkgs.waybar
-   pkgs.hyprpaper
-   pkgs.rofi-wayland
-   pkgs.xdg-desktop-portal-hyprland
+   kitty
+   waybar
+   hyprpaper
+   rofi-wayland
+   xdg-desktop-portal-hyprland
   ];
 
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
-
-  # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = false;
   programs.hyprland = {
     enable = true;
-    enableNvidiaPatches = true;
     xwayland.enable = true;
   };
 
