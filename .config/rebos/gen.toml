@@ -1,0 +1,39 @@
+# --------------------- #
+#    Generation File    #
+# --------------------- #
+
+# Other generation files to import. (Example: intensive_apps -> ~/.config/rebos/imports/intensive_apps.toml)
+imports = [
+    # "intensive_apps",
+    "corePackages",
+    "hyprland",
+    "ricing",
+    "fonts",
+    "wayland",
+]
+
+# Packages to be installed via the native package manager.
+[managers.system]
+items = [
+    # "git",
+    "firefox",
+    "neofetch",
+    "zsh",
+    "btop",
+    "ncdu",
+    "neovim",
+    "neovide",
+    "visual-studio-code-bin",
+]
+
+# Packages to be installed via Flatpak.
+[managers.flatpak]
+items = [
+    # "com.github.tchx84.Flatseal",
+]
+
+# Packages to be installed via Cargo.
+[managers.cargo]
+items = [
+    # "bacon",
+]

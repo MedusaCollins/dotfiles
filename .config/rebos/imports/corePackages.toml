@@ -1,0 +1,18 @@
+[managers.system]
+items = [
+  "git",
+  "zip",
+  "unzip",
+  "gcc",
+  "wget",
+  "grim",
+  "slurp",
+  "pavucontrol",
+  "wl-clipboard",
+  "dunst",
+  "libnotify",
+  "notification-daemon",
+  "pipewire",
+  "wireplumber",
+]
+
