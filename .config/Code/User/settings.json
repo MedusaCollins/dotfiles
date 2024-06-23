@@ -7,18 +7,18 @@
   "terminal.integrated.cwd": ".",
   "explorer.confirmDragAndDrop": false,
   "git.autofetch": true,
+  "editor.mouseWheelZoom": true,
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.integrated.fontSize": 12,
   "git.confirmSync": false,
-  "editor.mouseWheelZoom": true,
   "editor.mouseWheelScrollSensitivity": 5,
   "editor.fastScrollSensitivity": 2,
   "editor.suggest.insertMode": "replace",
+  "git.ignoreRebaseWarning": true,
   "editor.minimap.autohide": true,
   "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Nerd Font'",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
   "editor.codeActionsOnSave": {
     "source.addMissingImports": "explicit",
     "source.organizeImports": "explicit"
@@ -26,13 +26,14 @@
   "editor.renderWhitespace": "none",
   "editor.formatOnType": true,
   "editor.lineNumbers": "relative",
-  "git.ignoreRebaseWarning": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "extensions.ignoreRecommendations": true,
   "zenMode.fullScreen": false,
   "zenMode.showTabs": "none",
   "zenMode.hideLineNumbers": false,
+  "projectManager.git.baseFolders": ["$home/workspace"],
+  "projectManager.sortList": "Recent",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -42,6 +43,7 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
+  "editor.formatOnPaste": true,
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
   "template-string-converter.addBracketsToProps": true,
@@ -53,7 +55,6 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
-  "workbench.activityBar.location": "top",
   "git.openRepositoryInParentFolders": "never",
   "diffEditor.ignoreTrimWhitespace": false,
   "git.suggestSmartCommit": false,
@@ -134,7 +135,6 @@
   "window.zoomLevel": 1,
   "breadcrumbs.enabled": false,
   "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
-  "gitlens.ai.experimental.model": "openai:gpt-4o",
-  "workbench.sideBar.location": "right",
-  "window.menuBarVisibility": "toggle"
+  "window.menuBarVisibility": "toggle",
+  "workbench.sideBar.location": "right"
 }
