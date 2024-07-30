@@ -3,4 +3,8 @@ items = [
   "lxsession",
   #ohmyzsh
   "zsh-autosuggestions",
+  "lxappearance",
+  "waybar",
+  "rofi-wayland",
+  "polybar",
 ]

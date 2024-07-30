@@ -9,7 +9,9 @@ imports = [
     "hyprland",
     "ricing",
     "fonts",
-    "wayland",
+    "xorg",
+    "programming",
+    "gaming",
 ]
 
 # Packages to be installed via the native package manager.
@@ -17,6 +19,7 @@ imports = [
 items = [
     # "git",
     "firefox",
+    "cava-git",
     "neofetch",
     "zsh",
     "btop",
@@ -24,6 +27,9 @@ items = [
     "neovim",
     "neovide",
     "visual-studio-code-bin",
+    "obs-studio",
+    "aseprite",
+    "vesktop-bin",
 ]
 
 # Packages to be installed via Flatpak.

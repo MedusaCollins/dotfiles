@@ -1,0 +1,7 @@
+[managers.system]
+items = [
+  "minecraft-launcher",
+  "heroic-games-launcher",
+  "steam",
+  "lunar-client",
+]

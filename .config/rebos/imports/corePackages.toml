@@ -2,11 +2,16 @@
 items = [
   "git",
   "zip",
+  "lazygit-git",
   "unzip",
   "gcc",
   "wget",
   "grim",
   "slurp",
+  "maim",
+  "nitrogen",
+  "xclip",
+  "nemo",
   "pavucontrol",
   "wl-clipboard",
   "dunst",
@@ -14,5 +19,7 @@ items = [
   "notification-daemon",
   "pipewire",
   "wireplumber",
+  "pass",
+  "xev",
 ]
 
