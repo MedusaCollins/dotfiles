@@ -9,9 +9,7 @@ imports = [
     "hyprland",
     "ricing",
     "fonts",
-    "xorg",
     "programming",
-    "gaming",
 ]
 
 # Packages to be installed via the native package manager.
@@ -26,10 +24,9 @@ items = [
     "ncdu",
     "neovim",
     "neovide",
-    "visual-studio-code-bin",
     "obs-studio",
-    "aseprite",
-    "vesktop-bin",
+    "discord",
+    # "vesktop-bin",
 ]
 
 # Packages to be installed via Flatpak.
