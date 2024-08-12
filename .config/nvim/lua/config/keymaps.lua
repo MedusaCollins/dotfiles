@@ -26,6 +26,8 @@ vim.api.nvim_set_keymap("n", "<C-g>", ":s/", { noremap = true })
 vim.api.nvim_set_keymap("n", "<C-f>", "/", { noremap = true })
 vim.api.nvim_set_keymap("n", "<C-d>", "#", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-Esc>", ":ToggleTerm<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<S-Up>", "{", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<S-Down>", "}", { noremap = true, silent = true })
 
 -- Visual Mode
 vim.keymap.set("v", "<leader><Up>", "0k", { noremap = true })
@@ -33,6 +35,8 @@ vim.keymap.set("v", "<leader><Down>", "0j", { noremap = true })
 vim.keymap.set("v", "<A-Up>", ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
 vim.keymap.set("v", "<A-Down>", ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("v", "<C-g>", ":s/", { noremap = true })
+vim.api.nvim_set_keymap("v", "<S-Up>", "{", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<S-Down>", "}", { noremap = true, silent = true })
 
 -- Terminal Mode
 vim.api.nvim_set_keymap("t", "<C-Esc>", "<Cmd>ToggleTerm<CR>", { noremap = true, silent = true })
