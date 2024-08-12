@@ -3,7 +3,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="fishy"
 
-lugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-search sudo copydir history jsontools auto-notify)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-search sudo copydir history jsontools auto-notify)
 
 source $ZSH/oh-my-zsh.sh
 bindkey "$terminfo[kcuu1]" history-substring-search-up
