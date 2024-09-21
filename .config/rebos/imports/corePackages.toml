@@ -1,0 +1,22 @@
+[managers.system]
+items = [
+  "git",
+  "zip",
+  "lazygit-git",
+  "unzip",
+  "gcc",
+  "wget",
+  "grim",
+  "slurp",
+  "yt-dlp",
+  "pavucontrol",
+  "wl-clipboard",
+  "dunst",
+  "libnotify",
+  "notification-daemon",
+  "pass",
+  "fzf",
+  "pipewire",
+  "wireplumber",
+]
+

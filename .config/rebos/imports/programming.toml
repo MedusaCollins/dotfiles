@@ -1,0 +1,12 @@
+[managers.system]
+items = [
+  "python-pip",
+  "python-keyboard",
+  "wl-clipboard",
+  "pup",
+  "norminette-git",
+  "c_formatter_42",
+  "clang",
+  # "tsc-ls",
+  "nodejs",
+]
