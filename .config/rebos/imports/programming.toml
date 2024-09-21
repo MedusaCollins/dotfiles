@@ -1,7 +1,0 @@
-[managers.system]
-items = [
-  "python-pip",
-  "python-keyboard",
-  "wl-clipboard",
-  "pup",
-]
