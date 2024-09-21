@@ -15,3 +15,6 @@
 .config/xarchiver
 .config/xfburn
 .config/xfce4
+.config/mimeapps.list
+.config/pavucontrol.ini
+.config/Thunar
