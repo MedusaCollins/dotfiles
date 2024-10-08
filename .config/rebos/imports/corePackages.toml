@@ -6,9 +6,9 @@ items = [
   "unzip",
   "gcc",
   "wget",
+  "fd",
   "grim",
   "slurp",
-  "yt-dlp",
   "pavucontrol",
   "wl-clipboard",
   "dunst",
@@ -18,5 +18,6 @@ items = [
   "fzf",
   "pipewire",
   "wireplumber",
+  #"yt-dlp",
 ]
 

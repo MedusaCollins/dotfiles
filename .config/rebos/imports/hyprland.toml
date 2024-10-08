@@ -1,5 +1,5 @@
 [managers.system]
 items = [
   "hyprpaper",
-  "xdg-desktop-portal-hyprland-git",
+  # "xdg-desktop-portal-hyprland-git",
 ]

@@ -1,12 +1,13 @@
 [managers.system]
 items = [
-  "python-pip",
-  "python-keyboard",
+  # "python-pip",
+  # "python-keyboard",
   "wl-clipboard",
   "pup",
-  "norminette-git",
-  "c_formatter_42",
+  # "norminette-git",
+  # "c_formatter_42",
   "clang",
+  "ripgrep",
   # "tsc-ls",
-  "nodejs",
+  # "nodejs",
 ]
