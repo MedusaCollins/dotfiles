@@ -18,6 +18,5 @@ items = [
   "fzf",
   "pipewire",
   "wireplumber",
-  #"yt-dlp",
 ]
 

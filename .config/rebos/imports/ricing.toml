@@ -2,4 +2,7 @@
 items = [
   "waybar",
   "rofi-wayland",
+  "tokyonight-gtk-theme-git",
+  "nwg-look",
+  "lxappearance",
 ]
