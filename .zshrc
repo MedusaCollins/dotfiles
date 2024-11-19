@@ -13,3 +13,5 @@ source $ZSH/oh-my-zsh.sh
 bindkey '^H' backward-kill-word
 bindkey '5~' kill-word
 # zstyle ':omz:update' mode auto      # update automatically without asking
+
+alias checksync='./Scripts/checksync.sh'
