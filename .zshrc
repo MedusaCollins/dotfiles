@@ -14,4 +14,4 @@ bindkey '^H' backward-kill-word
 bindkey '5~' kill-word
 # zstyle ':omz:update' mode auto      # update automatically without asking
 
-alias checksync='./Scripts/checksync.sh'
+alias checksync='$HOME/Scripts/checksync.sh'

@@ -7,6 +7,6 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias checksync='./Documents/101/bash/checksync.sh'
+alias checksync='$HOME/Scripts/checksync.sh'
 
 stty werase '^h'
