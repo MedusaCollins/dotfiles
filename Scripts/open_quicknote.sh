@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd ~/Documents/notes/quickNotes
-nvim $(date +%Y-%m-%d).md
+nvim $(date +%d%m%y).md

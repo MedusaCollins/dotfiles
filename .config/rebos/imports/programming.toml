@@ -5,6 +5,7 @@ items = [
   "clang",
   "ripgrep",
   # "nodejs",
-  "visual-studio-code-bin",
-  "npm"
+  # "visual-studio-code-bin",
+  "npm",
+  "dotnet-sdk-8.0-bin"
 ]

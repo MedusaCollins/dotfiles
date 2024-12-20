@@ -20,7 +20,7 @@ items = [
     "btop",
     "ncdu",
     "neovim",
-    "discord",
+    "discord-canary",
     "nemo",
     # "cava-git",
     # "obs-studio",
